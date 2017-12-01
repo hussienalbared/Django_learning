@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+
+
+  </head>
+
+  <body>
+    <nav>
+
+
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo right">HAA</a>
+      <ul id="nav-mobile" class="left">
+        <li><a href="#">Home</a></li>
+        <li><a href="#" class="dropdown-button" data-activates="dropdown1">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+<ul id="dropdown1" class="dropdown-content">
+  <li><a>ho</a></li>
+  <li><a>ho</a></li>
+    <li><a>ho</a></li>
+</ul>
+
+    </div>
+        </nav>
+
+    {% for n in news %}
+<div class="container">
+
+
+    <h2 style="text-align: center;" class="black white-text lighten-3">{{n}}</h2>
+    <p>{{n.body}}</p>
+    <button class="btn waves-light center purple waves-effect hoverable"><a href="{{n.newslink}}">click here</a></button>
+
+    </div>
+    {%endfor%}
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+  </body>
+</html>
