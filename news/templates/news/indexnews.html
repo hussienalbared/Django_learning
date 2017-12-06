@@ -14,17 +14,13 @@
 
 
     <div class="nav-wrapper">
-      <a href="#" class="brand-logo right">HAA</a>
+      <a href="/news/" class="brand-logo right">HAA</a>
       <ul id="nav-mobile" class="left">
-        <li><a href="#">Home</a></li>
-        <li><a href="#" class="dropdown-button" data-activates="dropdown1">About</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="/news/Politics">Politics</a></li>
+        <li><a href="/news/Science">Science</a></li>
+        <li><a href="">Other</a></li>
       </ul>
-<ul id="dropdown1" class="dropdown-content">
-  <li><a>ho</a></li>
-  <li><a>ho</a></li>
-    <li><a>ho</a></li>
-</ul>
+
 
     </div>
         </nav>
@@ -37,6 +33,7 @@
     <p>{{n.body}}</p>
     <button class="btn waves-light center purple waves-effect hoverable"><a href="{{n.newslink}}">click here</a></button>
 
+{{n.category}}
     </div>
     {%endfor%}
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>

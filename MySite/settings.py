@@ -25,7 +25,7 @@ SECRET_KEY = 'p@6j6tcp7do^sodp162+(^#l6yizqq$limlw_5k90ijsal+-9a'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['0.0.0.0']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -56,8 +56,9 @@ ROOT_URLCONF = 'MySite.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['/home/hussien2017/Desktop/MySite/Templates/'
-        ,'/home/hussien2017/Desktop/MySite/news/templates/news'],
+        'DIRS': ['../MySite/Templates'
+
+        ,'../MySite//news/templates/news'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
