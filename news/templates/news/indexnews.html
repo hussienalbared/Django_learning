@@ -29,14 +29,28 @@
     {% for n in news %}
 <div class="container">
 
-
-    <h2 style="text-align: center;" class="black white-text lighten-3">{{n}}</h2>
-    <p>{{n.body}}</p>
-    <button class="btn waves-light center purple waves-effect hoverable"><a href="{{n.newslink}}">click here</a></button>
-
-{{n.date}}
+<div class="row">
+<div class="col s12 l4">
+    <h3 style="text-align: center;" class="lighten-3">{{n}}</h3>
     </div>
+    <div class="col s12 l8">
+    <p>{{n.body}}</p>
+    <button class="btn center blue-text black waves-effect hoverable"><a href="{{n.newslink}}">Read More</a></button>
+
+<p>{{n.date}}</p>
+</div>
+</div>
+<div class="divider"></div>
+  </div>
     {%endfor%}
+   <!--   <div class="container">
+    {%for agency in agencies%}
+    <li>{{agency}}</li>
+    {%endfor%}
+      
+
+    </div>
+    -->
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
   </body>
