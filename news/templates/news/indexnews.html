@@ -10,6 +10,7 @@
   </head>
 
   <body>
+  <div class="navbar-fixed">
     <nav>
 
 
@@ -25,13 +26,14 @@
 
     </div>
         </nav>
+        </div>
 
     {% for n in news %}
-<div class="container">
+<div class="container" >
 
 <div class="row">
 <div class="col s12 l4">
-    <h3 style="text-align: center;" class="lighten-3">{{n}}</h3>
+    <h3  class="lighten-10">{{n}}</h3>
     </div>
     <div class="col s12 l8">
     <p>{{n.body}}</p>
