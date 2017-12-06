@@ -6,7 +6,7 @@ from datetime import datetime
 class news(models.Model):
     title=models.CharField(max_length=100)
     body=models.TextField()
-    date=models.DateTimeField(default=datetime.now())
+    date=models.DateTimeField(default=datetime.now(), blank=True)
     category=models.CharField(max_length=100)
     newslink=models.CharField(max_length=100)
     Agency=models.CharField(max_length=100)
